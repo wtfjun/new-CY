@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%- title %></title>
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+	<link rel="stylesheet/less" type="text/css" href="/stylesheets/style.less">
+	<script src="/javascripts/less.min.js"></script>
+	<script src="/javascripts/jquery.min.js"></script>
+	<script src="/javascripts/index.js"></script>
+</head>
+<body>
+<header>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6 col-sm-12">
+		<h1 class="">
+			<a class="logo" href="http://www.chengyetech.com" rel="home">深圳网站建设_高端网站建设_企业网站设计公司_手机网站制作-诚也官网 引领响应式网站设计</a>
+		</h1>
+		</div>
+		<div class="col-md-6 col-sm-12">
+		<nav id="main_menu">
+			<ul>
+				<li><a href="/">首页</a></li>
+				<li><a href="/protect">案例</a></li>
+				<li><a href="/service">服务</a></li>
+				<li><a href="/contact">联系</a></li>
+			</ul>
+		</nav>
+		</div>
+	</div>
+</div>	
+</header>
+
+<%-body %>
+
+<footer>
+	
+	<p id="footer" style="text-align:center;margin-top:50px;">
+		Copyright © 2015-2016 CY-Tech 深圳市诚也科技提供高端网站建设服务  网站地图  粤ICP备16013721号-2  深圳网站建设  网站设计
+	</p>
+</footer>
+<script>
+	var url = window.location.href;
+  var loc = '/'+url.substring(url.lastIndexOf('/')+1);
+  // alert('/'+loc);
+  // alert($('#main_menu>ul>li:nth-child(4)').find('a').attr('href'));
+  var menu_li_l = ($('#main_menu>ul').children().length);
+  for (var i = 1; i <= menu_li_l; i++) {
+  	var href = $('#main_menu>ul>li:nth-child('+i+')').find('a').attr('href');
+
+    if(href == loc) {
+    	$('#main_menu>ul>li:nth-child('+i+')').find('a').addClass('current-menu-item');
+    }
+   } 
+  // alert(item);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

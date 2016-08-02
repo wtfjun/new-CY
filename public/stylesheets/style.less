@@ -1,0 +1,191 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family:  "微软雅黑";
+}
+body {
+  padding: 0 88px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	padding: 40px 0 70px 0px;
+
+	.logo {
+		width: 201px;
+		height: 45px;
+		margin-top: -24px;
+		margin-left: -10px;
+		display: block;
+		text-indent: -9999px;
+		background: url('../images/CY_logo.png');
+	}
+}
+
+
+#main_menu {
+	ul {
+		float: right;
+	}
+	li {
+		float: left;
+		font-size: 19px;
+		margin-left: 28px;
+		.current-menu-item {
+			color: #000;
+		}
+	
+		a {
+			color: #adadad;
+		}
+	}
+}
+#main {
+	margin-top: -20px;
+	padding: 0px;
+	.intro {
+		p {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+	.index_pro {
+		margin-top: 30px;
+	}
+}
+.box1 {
+	.title {
+		font-size: 21px;
+	}
+	.title_us {
+		font-size: 18px;
+		color: #adadad;
+	}
+}
+.my_thumbnail {
+	>a {
+		display: block;
+		transition: all .4s;
+		-moz-transition: all .4s; /* Firefox 4 */
+		-webkit-transition: all .4s; /* Safari 和 Chrome */
+		-o-transition: all .4s;
+	}
+	.title {
+		font-size: 18px;
+		line-height: 50px;
+	}
+	.type {
+		font-size: 14px;
+		color: #adadad;
+	}
+	position: relative; 
+	img {
+		width: 100%;
+		margin-bottom: 24px;
+	}
+	.content {
+		display: block;
+		transition: all .2s;
+		-moz-transition: all .2s; /* Firefox 4 */
+		-webkit-transition: all .2s; /* Safari 和 Chrome */
+		-o-transition: all .2s;
+		position: absolute;
+		top: 20px;
+		left: 20px; 
+		z-index: -99;
+		opacity: 1;
+	}
+
+}
+.my_thumbnail a:hover {
+	opacity: 0.2;
+	span {
+		opacity: 1;
+	}
+}
+.index_footer {
+	margin-top: 50px;
+	p,i{
+		font-size: 21px;
+	}
+	.container-fluid>div>div {
+		height: 280px;
+		a,span {
+			color: #adadad;
+		}
+	}
+}
+#footer {
+	color: #adadad;
+	font-size: 12px;
+}
+.consult {
+	margin-top: 50px;
+	.title {
+		font-size: 21px;
+	}
+	.right {
+		h3,p {
+			color: #adadad;
+		}
+		p {
+			font-size: 16px;
+			line-height: 25px;
+		}
+	}
+}
+@media (max-width: 991px) {
+	header {
+		.logo {
+			/*margin-top: -5px;*/
+		}
+	}
+	#main_menu {
+		ul {
+			margin-top: -25px;
+		}
+	}
+	#main_menu li {
+    /* float: none !important; */
+    margin-left: 15px;
+	}
+}
+@media (max-width: 619px) {
+	body {
+		padding: 0 10px;
+	}
+	header {
+		.logo {
+			margin-top: -38px;
+			margin-left: -10px;
+		}
+	}
+	#main_menu {
+		ul {
+			margin-top: 8px;
+			margin-left: -18px;
+			float: left;
+		}
+		li {
+			font-size: 15px;
+		}
+	}
+	#main {
+		.intro {
+			p {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+	}
+}
+
+
+
